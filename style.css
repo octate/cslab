@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Arial;
+}
+
+.landing-page {
+    background-image: URL("https://i.postimg.cc/2jB8Pwf9/juri-noga-btx_quss9kw-unsplash.jpg");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.landing-page .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 1;
+}
+
+.navbar {
+    color: #FFF;
+    display: flex;
+    padding: 50px 0;
+    margin: auto;
+    width: 650px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        width: 95%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    color: #ffa702fa;
+}
+
+.a {
+    color: #fff;
+}
+
+.navbar .links {
+    margin: 0;
+    width: 50%;
+    list-style: none;
+    text-align: right;
+}
+
+.navbar .links li {
+    display: inline-block;
+    margin-left: 2%;
+}
+
+.navbar .links li i {
+    cursor: pointer;
+    border: 1px solid transparent;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    transition: .5s;
+}
+
+.navbar .links li i:hover {
+    border: 1px solid #FFF;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.text-area {
+    color: #FFF;
+    text-align: center;
+    margin-top: 110px;
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .text-area {
+    margin-top: 80px;
+  }
+}
+
+.text-area h1 {
+    text-transform: uppercase;
+    letter-spacing: 11px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .text-area h1 {
+    font-size: 25px
+  }
+}
+
+.text-area p {
+    color: #ccc;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+.text-area a {
+    border-radius: 15px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    background: none;
+    text-transform: uppercase;
+    padding: 8px 40px;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+}
+
+.text-area a:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
+.footer {
+    color: #888;
+    position: relative;
+    bottom: -100px;
+    z-index: 2;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer p span {
+    color: #FFF;
+}
