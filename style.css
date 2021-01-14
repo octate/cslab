@@ -33,7 +33,25 @@ body {
     position: relative;
     z-index: 2;
 }
-
+@media (max-width: 460px){
+    .text-area a {
+        /* padding: 8px 6px!important; */
+        padding: 8px 20px!important;
+    font-size: 16px;
+    }
+}
+@media(max-width :376px){
+    .text-area a{
+        padding: 8px 20px!important;
+    font-size: 12px;
+    }
+}
+@media(max-width :280px){
+    .text-area a{
+        padding: 8px 20px!important;
+font-size: 10px;
+    }
+}
 @media (max-width: 767px) {
     .navbar {
         width: 95%;
